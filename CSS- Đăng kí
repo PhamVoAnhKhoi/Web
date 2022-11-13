@@ -1,0 +1,218 @@
+@font-face{font-family:'PN';src:url(//theme.hstatic.net/1000324393/1000429977/14/PN-Regular2.ttf?v=1228) format("truetype");}
+@font-face{font-family:'PN';src:url(//theme.hstatic.net/1000324393/1000429977/14/PN_SemiBold_gdi.ttf?v=1228) format("truetype");font-weight:600;}
+@font-face{font-family:'PN';src:url(//theme.hstatic.net/1000324393/1000429977/14/PN_SemiBold_gdi.ttf?v=1228) format("truetype");font-weight:bold;}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "PN",sans-serif;
+    background-color: pink;
+
+}
+
+/* Main */
+#header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+    background: #494a48;
+}
+#wrapper{
+
+}
+
+#nav, ul{
+    list-style-type: none;
+}
+
+#nav{
+    display: inline-block;
+}
+
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#nav #logo img{
+    padding: 5px 0;
+    width: 50px;
+    height: auto;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#main-menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#main-menu > li > a{
+    font-size: 17px;
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 0 10px;
+    line-height: 60px;
+}
+
+#main-menu > li:hover >a {
+    background-color: #CCC;
+    color: #000;
+}
+
+#main-menu > li:hover > .sub-menu{
+    display: block;
+    animation: modalFaceIn ease 0.4s;
+}
+
+#main-menu .sub-menu{
+    display: none;
+    position: absolute;
+    min-width: 220px;
+    background-color: rgba(32, 32, 32, 0.85);
+}
+
+.sub-menu li a{
+    display: block;
+    padding: 0 12px;
+    line-height: 45px;
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+.sub-menu li{
+    border-bottom: solid 1px #72756e;
+}
+
+.sub-menu > li:hover > a{
+    background-color: #000;
+}
+
+#main-menu .sub-menu .sub-menu{
+    display: none;
+    margin-top: -45px;
+    left: 220px;
+}
+
+#main-menu .sub-menu li:hover .sub-menu{
+    display: block;
+    transition: all 0.2s ease-in-out;
+    animation: modalFaceIn ease 0.5s;
+}
+
+.nav-icon{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 20px;
+    float: right;
+    color: #FFF;
+    line-height: 60px;
+}
+.icon{
+    padding: 0 5px;
+}
+#Register h1{
+    text-align: center;
+}
+#content{
+    text-align: center; 
+}
+#Content-Register{
+    margin-top: 10%;
+    background-color: pink;
+    font-size: 30px;
+    width:auto;
+   
+    
+}
+
+
+
+fieldset{
+    margin: 0px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    margin-bottom: 5px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.contant{
+    margin:50px;
+    margin-left:15%;
+    margin-right:15%;
+}
+.contant input{
+    height: 40px;
+}
+.fullName{
+    display: flex;
+   font-size:40px;
+}
+.fullName input{
+    width:100%
+}
+.firstName{
+  
+    margin-left: 20%;
+    margin-right:0% ;
+    /* float: right; */
+}
+
+.account input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.passWord{
+    display:flex;
+    width: 100%;
+
+}
+.repeat-accountPassword{
+    margin-left: 10%;  
+}
+.email input {
+   width: 100%
+}
+.information input {
+    width: 100%
+ }
+#birthday select{
+    size: 50%
+}
+
+.btn-submit{
+  text-align: center;
+}
+
+/* Javascript */
+@keyframes modalFaceIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0.2;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
