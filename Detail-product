@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        
+        <div id="header">
+            <div id="nav" class="container">
+                <a href="" id="logo" title="Trạm Tabo">
+                    <img src="~/Content/images/logo1.jpg" alt="">
+                </a>
+                <ul id="main-menu">
+                    <li><a href="" title="Trang chủ">trang chủ</a></li>
+                    <li><a href="" title="Giới thiệu">giới thiệu</a></li>
+                    <li>
+                        <a href="" title="Sản phẩm">
+                            sản phẩm
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    DÉP
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="">NIKE BENASSI</a></li>
+                                    <li><a href="">NIKE KAWA</a></li>
+                                    <li><a href="">NIKE SOLARSOFT</a></li>
+                                    <li><a href="">NIKE VICTORI</a></li>
+                                    <li><a href="">ADIDAS ADILETTE</a></li>
+                                    <li><a href="">ADIDAS CLOUDFOAM</a></li>
+                                    <li><a href="">ADIDAS ALPHABOUCE</a></li>
+                                    <li><a href="">ADIDAS SANDAL</a></li>
+                                    <li><a href="">JORDAN HYDRO</a></li>
+                                    <li><a href="">JORDAN BREAK</a></li>
+                                    <li><a href="">JORDAN NOLA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    GIÀY
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="">GIÀY JORDAN</a></li>
+                                    <li><a href="">GIÀY NIKE</a></li>
+                                    <li><a href="">GIÀY ADIDAS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">PHỤ KIỆN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="Liên hệ">liên hệ</a></li>
+                    <li><a href="" title="Tin tức">tin tức</a></li>
+                    <li><a href="https://tramtabo.vn/terex" title="Terex">terex</a></li>
+                    <li><a href="" title="Tìm kiếm đơn hàng">tìm kiếm đơn hàng</a></li>
+                    <div class="nav-icon">
+                        <i title="Search" class="icon search ti-search"></i>
+                        <a href="~/Views/Home/Login.cshtml">
+                            <i class="icon user ti-user"></i>
+                        </a>
+                        <i class="icon cart ti-shopping-cart"></i>
+                    </div>
+                </ul>
+                <ul class="nav navbar-nav navbartight">
+                    
+                    <li ><span class="glyphicon glyphicon-shopping-cart" href="~/Views/ShoppingCart/ShowCart.cshtml" ></span></li>
+                    <li href="~/Views/LoginUser/RegisterUser.cshtml"><span class="glyphicon glyphicon-user"></span>Sign Up</li>
+                    <li href="~/Views/LoginUser/Index.cshtml"><span class="glyphicon glyphicon-log-in"></span>Login</li>
+                    <li href="@Url.Action("LogOutUser" , "LoginUser")"><span class="glyphicon glyphicon-log-out"></span>LogOut</li>
+                </ul>
+            </div>
+        </div>
+ 
+    
+      
+
+        
+        <div class="cart">
+           <img class="card_img" src="https://bizweb.dktcdn.net/100/377/398/products/www-tramtabo-vn-2022-10-20t111229-413.png?v=1666239155717" alt="">   
+           <h2>AIR JORDAN 1 MID SE</h2>
+           <hr/>
+           <div class="card_price">4.850.000đ</div>
+           <div class="card_category">Loại: Giày</div> 
+            <div>  
+                <div class="card_size">
+                    <span>Size</span>
+                    <span><input type="button" value="36"/></span>
+                    <span><input type="button" value="37"/></span>
+                    <span><input type="button" value="38"/></span>
+                    
+                </div>
+                <div class="card_quantity">     
+                    <input type="button" value="-" class="qtyminus" data-field="quantity">
+                    <input type="number" name="quantity" value="1" class="quantity_product">
+                    <input type="button" value="+" class="qtyplus" data-field="quantity">
+                </div>
+            </div> 
+            
+            <div class="link-detail">
+                <button type="button" href="">Thêm vào giỏ hàng</button>
+            </div>
+            
+        </div>
+            
+           
+        <div class="container body-content">
+            <hr />
+                <div id="footer">
+                    <div class="footer-container">
+                        <div class="footer-middle-area bg-footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="contact">
+                                        <div class="footer-about mb-10 heading">
+                                            <h4><a href="">LIÊN HỆ</a></h4>
+                                        </div>
+                                        <div class="mb-10 single-footer">
+                                            <p class="footer-about">
+                                                <i class="icon-footer ti-email"></i><a href="">
+                                                    Email:
+                                                    tramtabo@gmail.com
+                                                </a>
+                                            </p>
+                                            <p class="footer-about">
+                                                <i class="icon-footer ti-mobile"></i><a href="">
+                                                    HOTLINE :
+                                                    089 939 7788
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="mb-10 single-footer">
+                                            <p class="footer-about">
+                                                <i class="icon-footer ti-home"></i><a href="">
+                                                    Chi nhánh 1: <br />250/4 Hai Bà Trưng, phường Tân Định, Quận 1, TP Hồ Chí
+                                                    Minh
+                                                </a>
+                                            </p>
+                                            <p class="footer-about">
+                                                <i class="icon-footer ti-mobile"></i><a href="">
+                                                    Điện thoại:
+                                                    089 839 7788
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="mb-10 single-footer">
+                                            <p class="footer-about">
+                                                <i class="icon-footer ti-home"></i><a href="">
+                                                    Chi nhánh 2: <br />387/12 CMT8, Phường 13, Quận 10, TP Hồ Chí Minh
+                                                </a>
+                                            </p>
+                                            <p class="footer-about">
+                                                <i class="icon-footer ti-mobile"></i><a href="">
+                                                    Điện thoại:
+                                                    078 688 7809
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="fanpage">
+                                        <div class="fanpage-follow">
+                                            <h4 class="footer-about mb-10 fanpage-heading">FOLLOW US</h4>
+                                            <a class="footer-about" href="">
+                                                <i class="icon-footer ti-facebook"></i>
+                                            </a>
+                                            <a class="footer-about" href="">
+                                                <i class="icon-footer ti-instagram"></i>
+                                            </a>
+                                            <a class="footer-about" href="">
+                                                <i class="icon-footer ti-youtube"></i>
+                                            </a>
+                                            <a class="footer-about" href="">
+                                                <i class="icon-footer ti-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="product">
+                                        <div class="footer-about mb-10">
+                                            <h4><a href="">PRODUCT</a></h4>
+                                        </div>
+                                        <ul class="product-list single-footer footer-about">
+                                            <li><a href="">Trang chủ</a></li>
+                                            <li><a href="">Giới thiệu</a></li>
+                                            <li><a href="">Sản phẩm</a></li>
+                                            <li><a href="">Liên hệ</a></li>
+                                            <li><a href="">Tin tức</a></li>
+                                            <li><a href="">TEREX</a></li>
+                                            <li><a href="">Tìm kiếm đơn hàng</a></li>
+                                        </ul>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+      
+    </div>
+
+   
+  
+</body>
+
+</html>
